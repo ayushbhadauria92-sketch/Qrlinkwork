@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: linkwork
+      POSTGRES_USER: linkwork
+      POSTGRES_PASSWORD: change_me
+    ports:
+      - "5432:5432"
+    volumes:
+      - linkwork_pg:/var/lib/postgresql/data
+volumes:
+  linkwork_pg:
