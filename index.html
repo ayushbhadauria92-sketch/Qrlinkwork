@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="LinkWork secure task marketplace">
+<meta name="theme-color" content="#070b16">
+<title>LinkWork — Secure Marketplace</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div id="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="mark">LW</div><div><b>LinkWork</b><small>Secure marketplace</small></div></div>
+    <nav id="nav"></nav>
+    <div class="side-foot"><span class="secure">● Secure session</span><button id="logout">Log out</button></div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <button class="menu" id="menu">☰</button>
+      <div><span class="kicker">LINKWORK</span><h1 id="title">Overview</h1></div>
+      <div class="actions"><select id="language" aria-label="Language"><option value="en">English</option><option value="hi">हिन्दी</option><option value="zh">中文</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="vi">Tiếng Việt</option><option value="ru">Русский</option></select><span class="avatar" id="avatar">?</span></div>
+    </header>
+    <div id="content"></div>
+  </main>
+</div>
+<div id="toast" class="toast" hidden></div>
+<script src="/app.js" defer></script>
+</body>
+</html>
